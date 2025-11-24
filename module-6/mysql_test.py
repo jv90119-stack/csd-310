@@ -5,7 +5,7 @@ import dotenv # to use .env file
 from dotenv import dotenv_values
 
 #using our .env file
-secrets = dotenv_values(" .env")
+secrets = dotenv_values(".env")
 
 """ database config object """
 config = {
