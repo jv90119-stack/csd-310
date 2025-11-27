@@ -5,14 +5,14 @@ import dotenv # to use .env file
 from dotenv import dotenv_values
 
 #using our .env file
-secrets = dotenv_values(".env")
+secrets = dotenv_values("code.env")
 
 """ database config object """
 config = {
-    "user": secrets["movies_user"],
-    "password": secrets["popcorn"],
-    "host": secrets["localhost"],
-    "database": secrets["movies"],
+    "user": secrets['USER'],
+    "password": secrets['PASSWORD'],
+    "host": secrets['HOST'],
+    "database": secrets['DATABASE'],
     "raise_on_warnings": True #not in .env file
 }
 
