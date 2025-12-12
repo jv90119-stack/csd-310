@@ -1,0 +1,4 @@
+USER=winery_user
+PASSWORD=grapes
+HOST=localhost
+DATABASE=BacchusWinery
