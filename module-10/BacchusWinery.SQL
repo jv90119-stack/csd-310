@@ -1,11 +1,4 @@
--- Setting up BacchusWinery Database Schema --
-USE BacchusWinery;
 
-# Setting up database user
-
-DROP USER IF EXISTS 'winery_user'@'localhost';
-CREATE USER 'winery_user'@'localhost' IDENTIFIED BY 'grapes';
-GRANT ALL PRIVILEGES ON BacchusWinery.* TO 'winery_user'@'localhost';
 
 # Drop Legacy Tables
 
@@ -192,6 +185,11 @@ INSERT INTO ProductOrderLines (OrderId, WineId, Quantity) VALUES
 (6003,404,60),
 (6004,404,30),
 (6005,401,25),
-(6006,402,35);
-
+(6006,402,35),
+(6001,403,60),
+(6002,401,40),
+(6003,403,20),
+(6004,403,35),
+(6005,404,25),
+(6006,401,40);
 -- BacchusWinery Database Schema Setup Complete --
